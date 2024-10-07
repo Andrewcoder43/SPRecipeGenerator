@@ -1,4 +1,3 @@
-// hooks/useMealGenerator.js
 import { useState, useCallback } from 'react';
 
 const solarpunkKeywords = ['Vegetarian', 'Vegan', 'Salad', 'Healthy', 'Organic', 'Local'];
@@ -32,3 +31,4 @@ export const useMealGenerator = () => {
 
     return { meal, fetchMeal };
 };
+
