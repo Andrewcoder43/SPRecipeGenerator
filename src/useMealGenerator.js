@@ -16,19 +16,22 @@ export const useMealGenerator = () => {
     }, []);
 
     const fetchMeal = useCallback(() => {
-        fetch('https://www.themealdb.com/api/json/v1/1/random.php')
-            .then(res => res.json())
-            .then(res => {
-                const fetchedMeal = res.meals[0];
-                if (isSolarpunkMeal(fetchedMeal)) {
-                    setMeal(fetchedMeal);
-                } else {
-                    fetchMeal();
-                }
-            })
-            .catch(error => console.error('Error fetching meal:', error));
+        const fetchAttempt = () => {
+            fetch('https://www.themealdb.com/api/json/v1/1/random.php')
+                .then(res => res.json())
+                .then(res => {
+                    const fetchedMeal = res.meals[0];
+                    if (isSolarpunkMeal(fetchedMeal)) {
+                        setMeal(fetchedMeal);
+                    } else {
+                        fetchAttempt();
+                    }
+                })
+                .catch(error => console.error('Error fetching meal:', error));
+        };
+
+        fetchAttempt();
     }, [isSolarpunkMeal]);
 
     return { meal, fetchMeal };
 };
-
