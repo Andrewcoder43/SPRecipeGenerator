@@ -93,17 +93,17 @@ const MealGenerator = () => {
       <div className="row text-center">
         <h3>Feeling hungry?</h3>
         <h5>Get a random solarpunk recipe by clicking below</h5>
-        <button className="button-primary" id="get_meal">Get Recipe</button>
+        <button className="meal-generator-button" id="get_meal">Generate Meal</button>
       </div>
       <div id="meal" className="row meal">
         {meal && createMeal(meal)}
       </div>
     </div>
   );
-};
-
-const App = () => (
-  <MealGenerator />
-);
-
-export default App;
+  };
+  
+  const App = () => (
+    <MealGenerator />
+  );
+  
+  export default App;
