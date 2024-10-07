@@ -1,7 +1,7 @@
 // App.js
 import React, { useEffect } from 'react';
-import { useMealGenerator } from './hooks/useMealGenerator';
-import { MealDisplay } from './components/MealDisplay';
+import { useMealGenerator } from './useMealGenerator';
+import { MealDisplay } from './MealDisplay';
 import './App.css';
 
 const MealGenerator = () => {
