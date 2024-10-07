@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SPRecipeGenerator/static/css/main.043d10e5.css",
-    "main.js": "/SPRecipeGenerator/static/js/main.f42b021b.js",
+    "main.js": "/SPRecipeGenerator/static/js/main.15fb6ad0.js",
     "static/js/453.3a70a2ff.chunk.js": "/SPRecipeGenerator/static/js/453.3a70a2ff.chunk.js",
     "index.html": "/SPRecipeGenerator/index.html",
     "main.043d10e5.css.map": "/SPRecipeGenerator/static/css/main.043d10e5.css.map",
-    "main.f42b021b.js.map": "/SPRecipeGenerator/static/js/main.f42b021b.js.map",
+    "main.15fb6ad0.js.map": "/SPRecipeGenerator/static/js/main.15fb6ad0.js.map",
     "453.3a70a2ff.chunk.js.map": "/SPRecipeGenerator/static/js/453.3a70a2ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.043d10e5.css",
-    "static/js/main.f42b021b.js"
+    "static/js/main.15fb6ad0.js"
   ]
 }
