@@ -5,25 +5,23 @@ import { MealDisplay } from './MealDisplay';
 import './App.css';
 
 const MealGenerator = () => {
-  const { meal, isLoading, fetchMeal } = useMealGenerator();
+  const { meal, fetchMeal } = useMealGenerator();
+
+  useEffect(() => {
+    const get_meal_btn = document.getElementById('get_meal');
+    get_meal_btn.addEventListener('click', fetchMeal);
+    return () => get_meal_btn.removeEventListener('click', fetchMeal);
+  }, [fetchMeal]);
 
   return (
     <div className="container">
       <div className="row text-center">
         <h3>Feeling hungry?</h3>
         <h5>Get a random solarpunk recipe by clicking below</h5>
-        <button 
-          className="meal-generator-button" 
-          onClick={fetchMeal}
-          disabled={isLoading}
-        >
-          {isLoading ? 'Searching...' : 'Generate Meal'}
-        </button>
+        <button className="meal-generator-button" id="get_meal">Generate Meal</button>
       </div>
       <div id="meal" className="row meal">
-        {isLoading && <p>Looking for a solarpunk meal...</p>}
-        {!isLoading && meal && <MealDisplay meal={meal} />}
-        {!isLoading && !meal && <p>No solarpunk meal found. Try again!</p>}
+        {meal && <MealDisplay meal={meal} />}
       </div>
     </div>
   );
