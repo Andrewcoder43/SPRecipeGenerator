@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sprecipegenerator/static/css/main.97619af7.css",
+    "main.js": "/sprecipegenerator/static/js/main.d3b8d1d5.js",
+    "static/js/453.3a70a2ff.chunk.js": "/sprecipegenerator/static/js/453.3a70a2ff.chunk.js",
+    "index.html": "/sprecipegenerator/index.html",
+    "main.97619af7.css.map": "/sprecipegenerator/static/css/main.97619af7.css.map",
+    "main.d3b8d1d5.js.map": "/sprecipegenerator/static/js/main.d3b8d1d5.js.map",
+    "453.3a70a2ff.chunk.js.map": "/sprecipegenerator/static/js/453.3a70a2ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97619af7.css",
+    "static/js/main.d3b8d1d5.js"
+  ]
+}
